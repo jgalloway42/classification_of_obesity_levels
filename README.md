@@ -33,5 +33,5 @@ Scoring the random forest and XGBoost on the test set gives the following classi
 ![](https://github.com/jgalloway42/classification_of_obesity_levels/blob/main/obesity_xgboost_cfmatrix.png)
 
 ## Conclusion
-Overall, both the random forest and XGBoost model performed very well with f1-scores over 95% in both cases. Both models had trouble classifying levels 1 and 2 (Normal Weight and OverWeight I). Future work may include training separate models to detect just those variables and then combining them via stacking to train a meta-model.
+Overall, both the random forest and XGBoost model performed very well with f1-scores over 95% in both cases. The random forest had trouble classifying Normal Weight and OverWeight I, whereas the XGBoost model had issues with Insufficient Weight, Normal Weight, Overweight Level I confusing them for Normal Weight. Future work may include training separate models to detect just those variables and then combining them via stacking to train a meta-model.
 
